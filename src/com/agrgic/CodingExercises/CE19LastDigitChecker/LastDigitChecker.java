@@ -1,4 +1,4 @@
-package com.agrgic.CodingExercises.CodingExercise19LastDigitChecker;
+package com.agrgic.CodingExercises.CE19LastDigitChecker;
 
 public class LastDigitChecker {
 

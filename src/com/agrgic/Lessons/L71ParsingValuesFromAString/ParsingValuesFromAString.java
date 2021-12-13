@@ -1,6 +1,6 @@
 package com.agrgic.Lessons.L71ParsingValuesFromAString;
 
-public class Main {
+public class ParsingValuesFromAString {
 
 
     public static void main(String[] args) {
@@ -20,4 +20,4 @@ public class Main {
     } // main method
 
 
-} // Main class
+} // ParsingValuesFromAString class

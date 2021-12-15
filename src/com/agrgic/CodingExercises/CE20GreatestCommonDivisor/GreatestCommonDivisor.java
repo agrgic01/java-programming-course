@@ -5,8 +5,6 @@ public class GreatestCommonDivisor {
 
     public static int getGreatestCommonDivisor(int first, int second) {
 
-        // couldn't figure out this one - rip math lol
-
         if (first < 10 || second < 10)
             return -1;
 

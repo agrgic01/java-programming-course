@@ -38,7 +38,7 @@ public class Point {
     }
 
 
-    /* METHOD */
+    /* METHODS */
     public double distance() {
         return Math.sqrt((-this.x) * (-this.x) + (-this.y) * (-this.y));
     }

@@ -17,6 +17,7 @@ public class Dog extends Animal {
         super(name, 1, 1, size, weight);
         this.eyes = eyes;
         this.legs = legs;
+        this.tail = tail;
         this.teeth = teeth;
         this.coat = coat;
 

@@ -4,6 +4,6 @@ a) "super" keyword - used to access parent class members, commonly used in metho
 b) "this" keyword - used to access current class members, required when we have parameter name same as a field name, commonly used with constructors and setters, and optionally used with getters.
 c) "this" or "super" keywords cannot be used within static areas (static code blocks/methods)
 
-d) "this()" method call - calls a constructor from another overloaded constructor in the same class, can only be used in a constructor, additionally it has to be the first statement in a constructor
+d) "this()" method call - calls a constructor from another overloaded constructor in the same class, can only be used in a constructor, additionally it has to be the first statement in a constructor,
 e) "super()" method call - the only way to call a parent constructor, java compilers puts a default call to super() if we don't add it, has to be first statement in each constructor.
 f) A constructor can have either this() or a super() call but never both

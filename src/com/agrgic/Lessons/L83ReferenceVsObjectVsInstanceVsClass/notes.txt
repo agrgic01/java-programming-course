@@ -1,0 +1,8 @@
+no coding, only explanations
+
+analogy of building a house
+    a) Class - blueprint for building a house, we can re-use this blueprint to build any number of houses
+    b) Object or Instance - each house we build using the "new" keyword
+    c) Reference - an address of a particular house, every object has its address AKA reference
+                 - we can copy a reference but there is still that same one house
+                 - we can pass references as parameters to constructors and methods

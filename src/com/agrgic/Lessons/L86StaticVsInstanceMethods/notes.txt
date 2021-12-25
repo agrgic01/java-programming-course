@@ -1,0 +1,13 @@
+static methods
+    -declared using the 'static' modifier.
+    -can't access instance variables or instance methods directly.
+    -don't have access to "this()" keyword.
+
+instance methods
+    -belong to an instance of a class
+    -to use an instance method we need to instantiate the class first by using the "new" keyword
+    -can access instance methods or instance variables directly
+    -can also access static methods and static variables directly
+
+static or instance method?
+    if a method is using fields or instance methods, it should probably be an instance method.

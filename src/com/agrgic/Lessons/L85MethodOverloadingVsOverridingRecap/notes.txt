@@ -1,0 +1,17 @@
+method overloading
+    -providing two or more separate methods with same name but different parameters.
+    -method return type may or may not be different, this allows us to reuse the same method name.
+    -reduces duplicate code, easier to remember method names.
+
+method overriding
+    -defining a method in a child class that already exists in the parent class with the same signature (same name, same parameters)
+    -by extending a parent class, the child class gets all the methods from the parent class. (AKA derived methods).
+    -put '@override' above the method definition.
+    -can't override static methods, only instance methods.
+
+    method overriding rules
+        -must have same name and arguments
+        -return type can be a subclass of the return type in the parent class.
+        -can't have a lowe access modifier.
+        -only inherited methods can be overridden,
+        -a subclass can use 'super.method()', to call the superclass version of the overridden method

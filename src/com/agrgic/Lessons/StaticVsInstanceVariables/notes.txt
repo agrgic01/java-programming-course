@@ -1,0 +1,12 @@
+static variables
+    -declared by using the keyword "static"
+    -aka static member variables
+    -every instance of that class shares the same static variable
+    -not often used but can sometimes be very useful (example useful when using "Scanner" class)
+
+instance variables
+    -they don't use the "static" keyword
+    -instance variables are aka fields or member variables
+    -belong to an instance of a class, every instance has its own copy of an instance variable
+    -every instance have a different value (state)
+    -instance variables represent the state of an instance

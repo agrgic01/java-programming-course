@@ -1,0 +1,4 @@
+OOP - Part 2
+Composition, Encapsulation and Polymorphism
+
+This is the part 2 of the object orientated programming sections of the course.

@@ -19,8 +19,12 @@ public class Chair {
     }
 
     /* methods */
-    private void chairDescription() {
+    public void chairDescription() {
         System.out.println("Chair manufacturer is " + manufacturer + " and the model is " + model + ".");
+    }
+
+    public void spinChair() {
+        System.out.println("You spin the chair, WHEE...");
     }
 
 

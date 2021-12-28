@@ -20,7 +20,7 @@ public class Floor {
     }
 
     /* methods */
-    private double getArea() {
+    public double getArea() {
         return width * length;
     }
 
@@ -30,6 +30,10 @@ public class Floor {
             System.out.println("Carpet has been cleaned " + cleaningCounter + " time so far.");
         else
             System.out.println("Carpet has been cleaned " + cleaningCounter + " times so far.");
+    }
+
+    public void hideFloor() {
+        
     }
 
 

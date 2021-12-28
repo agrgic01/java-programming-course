@@ -2,16 +2,22 @@ package com.agrgic.Lessons.Section7.L92CompositionPart2;
 
 public class Bedroom {
 
+    private String name;
     private Floor floor;
     private Walls walls;
     private Chair chair;
     private Bed bed;
 
-    public Bedroom(Floor floor, Walls walls, Chair chair, Bed bed) {
+    public Bedroom(String name, Floor floor, Walls walls, Chair chair, Bed bed) {
+        this.name = name;
         this.floor = floor;
         this.walls = walls;
         this.chair = chair;
         this.bed = bed;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Floor getFloor() {
@@ -28,11 +34,6 @@ public class Bedroom {
 
     public Bed getBed() {
         return bed;
-    }
-
-    /* methods */
-    public void hideObject() {
-
     }
 
 } // Bedroom class

@@ -26,7 +26,7 @@ public class Walls {
     }
 
     /* methods */
-    private void wallsDescription() {
+    public void wallsDescription() {
         System.out.println("This room has " + numberOfWalls + " walls of color " + color + " and their height is " + height + ".");
     }
 

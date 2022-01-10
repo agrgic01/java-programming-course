@@ -4,7 +4,15 @@ import java.util.Scanner;
 
 public class MinimumElement {
 
-    public static int readInteger() {
+    public static void main(String[] args) {
+
+        int[] array = MinimumElement.readElements(MinimumElement.readInteger());
+        System.out.println("Minimum Element Value = " + MinimumElement.findMin(array));
+
+    } //main method
+
+
+    private static int readInteger() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -14,7 +22,7 @@ public class MinimumElement {
     } //readInteger method
 
 
-    public static int[] readElements(int count) {
+    private static int[] readElements(int count) {
 
         Scanner scanner = new Scanner(System.in);
         int[] array = new int[count];
@@ -30,7 +38,7 @@ public class MinimumElement {
     } //readElements method
 
 
-    public static int findMin(int[] array) {
+    private static int findMin(int[] array) {
 
         int min = Integer.MAX_VALUE;
 

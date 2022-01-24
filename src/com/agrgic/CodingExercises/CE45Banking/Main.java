@@ -19,7 +19,6 @@ public class Main {
         registration.newCustomer("Alen", 420);
         registration.addCustomerTransaction("Alen", 100);
         System.out.println(registration.getCustomers().get(1).getTransactions());
-        registration.findCustomer("Alen");
 
         /*System.out.println("\r");
 

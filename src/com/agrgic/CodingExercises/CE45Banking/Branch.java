@@ -48,8 +48,8 @@ public class Branch {
         return false;
     }
 
-    public Customer findCustomer(String name) {
-        for (int i = 0; i <customers.size(); i++) {
+    private Customer findCustomer(String name) {
+        for (int i = 0; i < customers.size(); i++) {
             if (name == customers.get(i).getName()) {
                 return customers.get(i);
             }

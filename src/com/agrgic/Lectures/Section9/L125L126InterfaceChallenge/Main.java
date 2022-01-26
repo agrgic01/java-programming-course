@@ -1,7 +1,6 @@
 package com.agrgic.Lectures.Section9.L125L126InterfaceChallenge;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -9,11 +8,20 @@ public class Main {
     public static void main(String[] args) {
         Player tim = new Player("Tim", 10, 15);
         System.out.println(tim.toString());
+        saveObject(tim);
+
+        tim.setHitPoints(8);
+        System.out.println(tim);
         tim.setWeapon("Stormbringer");
         saveObject(tim);
-        loadObject(tim);
+        // loadObject(tim);
         System.out.println(tim);
-    } // main method
+
+        ISaveable werewolf = new Monster("Dankan", 20, 40);
+        System.out.println("Strength = " + ((Monster) werewolf).getStrength());
+        saveObject(werewolf);
+
+    } // "main" method
 
     public static ArrayList<String> readValues() {
         ArrayList<String> values = new ArrayList<>();
@@ -37,21 +45,20 @@ public class Main {
                     index++;
                     break;
             }
-        }
+        } // "readValues" method
 
         return values;
-    }
+    } // "readValues" method
 
     public static void saveObject(ISaveable objectToSave) {
         for (int i = 0; i < objectToSave.write().size(); i++) {
             System.out.println("Saving " + objectToSave.write().get(i) + " to storage device.");
         }
-    }
+    } // "saveObject" method
 
     public static void loadObject(ISaveable objectToLoad) {
-        List<String> values = readValues();
+        ArrayList<String> values = readValues();
         objectToLoad.read(values);
-    }
+    } // "loadObject" method
 
-
-} // Main class
+} // "Main" class

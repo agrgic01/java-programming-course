@@ -67,16 +67,16 @@ public class Player implements ISaveable {
         values.add(2, "" + this.strength);
         values.add(3, this.weapon);
         return values;
-    }
+    } // "write" method
 
     @Override
     public void read(List<String> savedValues) {
-        if(savedValues != null && savedValues.size() > 0) {
+        if (savedValues != null && savedValues.size() > 0) {
             this.name = savedValues.get(0);
             this.hitPoints = Integer.parseInt(savedValues.get(1));
             this.strength = Integer.parseInt(savedValues.get(2));
             this.weapon = savedValues.get(3);
         }
-    }
+    } // "read" method
 
-}
+} // "Player" class

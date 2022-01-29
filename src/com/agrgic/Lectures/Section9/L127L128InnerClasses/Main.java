@@ -8,7 +8,7 @@ public class Main {
     private static Button btnPrint = new Button("Print");
 
     public static void main(String[] args) {
-        class ClickListener implements Button.OnClickListener {
+        /*class ClickListener implements Button.OnClickListener {
 
             public ClickListener() {
                 System.out.println("I've been attached");
@@ -21,7 +21,14 @@ public class Main {
 
         } // "clickListener" class
 
-        btnPrint.setOnClickListener(new ClickListener());
+        btnPrint.setOnClickListener(new ClickListener());*/
+
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println(title + " was clicked");
+            }
+        });
         listen();
 
     } // "main" method
